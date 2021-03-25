@@ -1,0 +1,168 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Pocket Law</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-content">
+	<ion-slides pager="true" [options]="slideOptsOne" #slideWithNav
+		(ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+		<ion-slide>
+			<img src="assets/img/images/law_banner2.jpg">
+		</ion-slide>
+
+		<ion-slide>
+			<img src="assets/img/images/law_banner1.jpg">
+		</ion-slide>
+
+
+	</ion-slides>
+
+	<div class="header-inner">
+		<h2>About Pocket Law</h2>
+		<h4>Expert Second Opinion on Tax & Custom Laws</h4>
+		<p>Through our years of domain experience, we realized a lot of our referral clients have not been properly
+			guided. The fear factors of Tax and Custom laws are making people vulnerable to costly procedures. This is
+			why we dedicatedly focused on offering valuable and fortune saving second opinion for income tax, goods and
+			services or custom law situations.</p>
+
+		<h3>Why Us?</h3>
+		<p>We dedicatedly focused on offering valuable and fortune saving second opinion for income tax laws, goods and
+			services tax laws or customs law and Companies law situations.</p>
+
+		<h3>Vision</h3>
+		<p>To be the face who brings the laws into your pocket through our second opinion via connecting our expert
+			knowledge with the latest technology.</p>
+
+		<h3>Mission</h3>
+		<p>To be the leading Second Opinion provider with a reputation of providing best piece of opinion. By making
+			laws understandable, keep you and your trade free from any penal procedures.</p>
+	</div>
+	<div class="inner-card">
+		<h2>GST & Income Tax Query</h2>
+		<h3>Have a query regarding GST or Income Tax ?</h3>
+		<p>GST and Income Tax related queries are flooding over internet and for each query there are multiple experts –
+			many of them, however are not even qualified practitioners. At PocketLaw, we have dedicated qualified
+			experts to answer your GST & Income Tax concerns which include;</p>
+		<ul>
+			<li>GST and Income Tax related complex issues</li>
+			<li>Relevant section and case laws citation</li>
+			<li>Cross questions related to all your fears for the law</li>
+			<li>Guaranteed Answering of all the queries which are troubling you</li>
+		</ul>
+		<ion-button shape="round" (click)="checklogin_for_package()" class="query-btn">Ask Your Query</ion-button>
+	</div>
+
+	<div class="header-services">
+		<h2>Our Services</h2>
+		<h4>We Are Specialized in the Following Services</h4>
+	</div>
+	<div class="inner-content">
+		<div class="inner-card-new">
+			<ion-row>
+				<ion-col Size="4">
+					<img src="assets/img/images/icon1.png" alt="Ionic logo">
+				</ion-col>
+				<ion-col Size="8">
+					<h3>Goods & Services Tax Consultancy</h3>
+				</ion-col>
+				<ion-col Size="12">
+					<p>In now a day, GST Laws have replaced many indirect tax laws, which reduced compliance’s huge
+						burden for traders. But at the same time frequent changes in this new law made it difficult for
+						traders to implement it.</p>
+					<a (click)="ourservices()">Read More</a>
+
+				</ion-col>
+			</ion-row>
+		</div>
+
+		<div class="inner-card-new">
+			<ion-row>
+				<ion-col Size="4">
+					<img src="assets/img/images/icon3.png" alt="Ionic logo">
+				</ion-col>
+				<ion-col Size="8">
+					<h3>Customs Law</h3>
+				</ion-col>
+				<ion-col Size="12">
+					<p>Customs Query are flooding over internet and for each query there are multiple experts – many of
+						them, however are not even qualified practitioners. </p>
+					<a (click)="ourservices()">Read More</a>
+				</ion-col>
+			</ion-row>
+		</div>
+		<div class="inner-card-new">
+			<ion-row>
+				<ion-col Size="4">
+					<img src="assets/img/images/income.png" alt="Ionic logo">
+				</ion-col>
+				<ion-col Size="8">
+					<h3>Income Tax Laws</h3>
+				</ion-col>
+				<ion-col Size="12">
+					<p>In recent scenario, Income tax Laws cover a big chunk of the Country, which may or may not be
+						aware of the stringent income tax laws.</p>
+					<a (click)="ourservices()">Read More</a>
+				</ion-col>
+			</ion-row>
+		</div>
+		<div class="inner-card-new">
+			<ion-row>
+				<ion-col Size="4">
+					<img src="assets/img/images/company.png" alt="Ionic logo">
+				</ion-col>
+				<ion-col Size="8">
+					<h3>Company Law</h3>
+				</ion-col>
+				<ion-col Size="12">
+					<p>Company Law compliances demand professional opinion, without which fine, penal or prosecutions
+						provisions attract.</p>
+					<a (click)="ourservices()">Read More</a>
+				</ion-col>
+			</ion-row>
+		</div>
+
+	</div>
+	<div class="inner-content bg-light-yellow">
+		<div class="query-block">
+			<ion-row>
+				<ion-col Size="12">
+					<img src="assets/img/images/gstreturn2.png" alt="Ionic logo">
+				</ion-col>
+				<ion-col Size="12">
+					<h2>GST Return</h2>
+					<p>GST Compliances cost an average business more than 10 man-hours each month. It does not add to
+						the productive time and moreover, your in-house resource has to spend extra time in learning
+						about constant changes to avoid non-compliance and fines. PocketLaw offers you a zero-hassle one
+						stop GST Return filing service, so that you can focus on your core business.</p>
+					<ion-button shape="round" (click)="checklogin_for_package()" class="query-btn">Ask Your Query
+					</ion-button>
+				</ion-col>
+			</ion-row>
+		</div>
+	</div>
+
+	<div class="inner-content bg-light-yellow">
+		<div class="query-block">
+			<ion-row>
+				<ion-col Size="12">
+					<img src="assets/img/images/incometaxreturn.png" alt="Ionic logo">
+				</ion-col>
+				<ion-col Size="12">
+					<h2>Income Tax Return</h2>
+					<p>With each passing day, Income Tax laws are becoming stringent. Even for people who are paying
+						their tax with honesty, the laws can get confusing. To avoid any situation of incorrect income
+						tax business filing, connect with our expert CA team at Pocketlaw and benefit from their
+						reliable and profitable income tax return services.</p>
+					<ion-button shape="round" (click)="checklogin_for_package()" class="query-btn">Ask Your Query
+					</ion-button>
+				</ion-col>
+			</ion-row>
+		</div>
+	</div>
+	<br>
+	<br>
+</ion-content>

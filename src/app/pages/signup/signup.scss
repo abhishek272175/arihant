@@ -1,0 +1,106 @@
+:host {
+  ion-toolbar {
+    --background:#303030;
+  }
+  ion-title {
+    color: #b99044;
+  }
+  ion-label {
+    color:#fff;
+  }
+  ion-checkbox {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .sc-ion-buttons-md-s .button {
+    --background-hover: currentColor;
+    color: #ffffff;
+}
+  .signup-logo {
+    padding: 30px 0;
+        min-height: 100px;
+        text-align: center;
+  }
+  
+  .signup-logo img {
+    max-width: 220px;
+  }
+  
+  .list {
+    margin-bottom: 0;
+  }
+  .bg-content {
+    --background: #ffffff; 
+    background-position: center;
+  }
+  .content-bg {
+    background-color: #303030;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    width: 90%;
+    min-height: 330px;
+  }
+  .header-inner {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .header-inner h2 {
+    color: #b99044;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .list-color {
+    background-color: transparent;
+  }
+  --ion-color-secondary: #ffffff;
+  --ion-color-light: #303030;
+  --ion-color-light2: #b99044;
+  --ion-color-light3: #ffffff;
+  .label-stacked.sc-ion-label-md-h, .label-floating.sc-ion-label-md-h {
+    color: #ffffff;
+  }
+  .native-input.sc-ion-input-md {
+    color: #ffffff;
+  }
+  ion-input {
+    color: #ffffff; 
+  }
+  .bg-form {
+    background-color: transparent;
+  }
+  .sent-btn {
+    border: 1px solid #b99044;
+    height: 45px;
+    background: #b99044;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 1px solid #b99044;
+    transition: 0.3s ease-in-out;
+  }
+  .sent-btn:hover {
+    background: #ffffff;
+    color: #b99044;
+  }
+  .register-btn {
+    border: 1px solid #b99044;
+    height: 45px;
+    background: #ffffff;
+    color: #b99044;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 1px solid #b99044;
+    transition: 0.3s ease-in-out;
+  }
+  .register-btn:hover { 
+    background: #b99044;
+    color: #ffffff;
+  }
+  .btn-box {
+    padding: 20px 0;
+  }
+  }

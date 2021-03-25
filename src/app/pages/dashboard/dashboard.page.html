@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-content">
+  <div class="inner-content">
+
+
+    <div class="inner-card">
+      <ion-row>
+        <ion-col Size="4">
+          <img src="assets/img/images/avatar.jpg" alt="Ionic logo">
+        </ion-col>
+        <ion-col Size="8">
+          <p style="font-weight: 600; text-transform: capitalize;">{{this.username}}</p>
+          <p>{{this.email}}</p>
+          <p>Joined {{this.created_at | date: 'dd/MM/yyyy'}}</p>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="card-package" *ngIf="(this.expdate >= this.curr_date)">
+     
+      <h3><span class="pd-5">
+          <ion-icon name="card-outline"></ion-icon>
+        </span>Package Expire on <span>({{this.expdate | date }})</span></h3>
+     
+    </div>
+
+    <div class="card-package" *ngIf="(this.expdate < this.curr_date)">
+      <h3><span class="pd-5">
+        <ion-icon name="card-outline"></ion-icon>
+      </span>You do not have any active package, please click below to start subscription.<br>
+        <ion-button (click)="pkg()" type="submit" shape="round" size="small" class="click-btn">Buy Package
+        </ion-button>
+      </h3>
+    </div>
+
+    <div class="table-inner" *ngFor="let item of packagedetails; index as i">
+      <ion-row class="brdr-row border-top">
+        <ion-col size="4" class="bg-yellow">
+          <div class="info">
+            #
+          </div>
+        </ion-col>
+        <ion-col size="8" class="p-0">
+          <div class="info-content-center">
+            {{i+1}}
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="brdr-row">
+        <ion-col size="4" class="p-0 bg-yellow">
+          <div class="info-content">
+            Package Name
+          </div>
+        </ion-col>
+        <ion-col size="8" class="p-0">
+          <div class="info-content-center">
+            {{item.package_name}}
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="brdr-row">
+        <ion-col size="4" class="p-0 bg-yellow">
+          <div class="info-content">
+            Start Date
+          </div>
+        </ion-col>
+        <ion-col size="8" class="p-0">
+          <div class="info-content-center">
+            {{item.start_date | date }}
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="brdr-row">
+        <ion-col size="4" class="p-0 bg-yellow">
+          <div class="info-content">
+            End Date
+          </div>
+        </ion-col>
+        <ion-col size="8" class="p-0">
+          <div class="info-content-center">
+            {{item.end_date | date }}
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="brdr-row">
+        <ion-col size="4" class="p-0 bg-yellow">
+          <div class="info-content">
+            Amount(Rs)
+          </div>
+        </ion-col>
+        <ion-col size="8" class="p-0">
+          <div class="info-content-center">
+             {{item.totalAmount}}
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

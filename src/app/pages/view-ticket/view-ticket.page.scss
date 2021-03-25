@@ -1,0 +1,195 @@
+:host {
+    ion-toolbar {
+        --background:#303030;
+      }
+      ion-title {
+        color: #b99044;
+      }
+      .sc-ion-buttons-md-s .button {
+        --background-hover: currentColor;
+        color: #ffffff;
+    }
+   
+      .bg-content {
+        --background: #ffffff; 
+      }
+      .header-inner {
+        text-align: center;
+        padding: 20px 20px;
+        margin: 0;
+      }
+      .header-inner h2 {
+        color: #b99044;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .header-inner p {
+        color: #303030;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .inner-ticket {
+          margin: 0 20px;
+          padding: 0;
+      }
+      .inner-ticket h2 {
+          font-size: 12px;
+          font-weight: 600;
+          color: #000000;
+          margin-bottom: 10px;
+          margin-top: 0;
+      }
+      .msg-box {
+          margin: 0 20px;
+          padding: 0;
+      }
+      .bg-grey {
+        background-color: #f8f8f8;
+      }
+      .info {
+        padding: 3px 10px;
+        color: #ffffff;
+        text-align: left;
+    }
+    .info h2 {
+        font-size: 14px;
+        color: #000000;
+        font-weight: 600;
+        margin: 0 0 5px 0;
+    }
+    .info p {
+        font-size: 12px;
+        font-weight: 500;
+        color: #000000;
+        margin: 0 0 5px 0;
+    }
+    .info-icon {
+        padding: 3px 10px;
+    color: #000000;
+    text-align: left;
+    font-size: 31px;
+    }
+    .p-0 {
+        padding:0  !important;
+    }
+    .ptb-0 {
+        padding:0 10px 10px 10px   !important;
+    } 
+    .edit {
+        padding: 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: right;
+    }
+    .info-content {
+        padding: 10px;
+        color: #000000;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: left;
+        
+    }
+    .brdr-row {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+    .border-top {
+        border-top: 1px solid #dddddd;
+    }
+    .info-edit {
+        padding: 10px;
+        color: #303030;
+        text-transform: uppercase;
+        font-size: 9px;
+        text-align: right;
+        
+    }
+    .info-content-center {
+        padding: 10px;
+        color: #000000;
+        font-size: 12px;
+        text-align: left;
+        font-weight: 400;
+    }
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+    .table-inner {
+        margin: 30px auto;
+        padding: 0;
+        border: 1px solid #dddddd;
+    }
+    .mt-15 {
+      margin-top: 15px;
+    }
+    --ion-color-light: #ffffff;
+    .reply {
+        margin:10px 20px;
+        padding: 0;
+    }
+    .reply-header {
+        margin: 0;
+        padding: 10px;
+    }
+    .reply-header h2 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        margin-top: 0;
+    }
+    .sent-btn {
+        border: 1px solid #b99044;
+        height: 45px;
+        background: #b99044;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: 1px solid #b99044;
+        transition: 0.3s ease-in-out;
+      }
+      .sent-btn:hover {
+        background: #ffffff;
+        color: #b99044;
+      }
+      .register-btn {
+        border: 1px solid #b99044;
+        height: 45px;
+        background: #ffffff;
+        color: #b99044;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: 1px solid #b99044;
+        transition: 0.3s ease-in-out;
+      }
+      .register-btn:hover { 
+        background: #b99044;
+        color: #ffffff;
+      }
+     .btn-box {
+        padding: 20px 0;
+    }
+    .content-bg {
+        background-color: #303030;
+        padding: 20px;
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+      }
+      --ion-color-secondary: #b99044;
+    --ion-color-light: #303030;
+    --ion-color-light2: #b99044;
+    .label-stacked.sc-ion-label-md-h, .label-floating.sc-ion-label-md-h {
+        color: #ffffff;
+      }
+      .native-input.sc-ion-input-md {
+        color: #ffffff;
+      }
+      ion-input {
+        color: #ffffff; 
+      }
+      .native-textarea.sc-ion-textarea-md {
+        color: #ffffff; 
+    }
+    }

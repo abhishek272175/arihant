@@ -1,0 +1,116 @@
+:host {
+    ion-toolbar {
+        --background:#303030;
+      }
+      ion-title {
+        color: #b99044;
+      }
+      .sc-ion-buttons-md-s .button {
+        --background-hover: currentColor;
+        color: #ffffff;
+    }
+    .bg-content {
+        --background: #ffffff; 
+      }
+      .inner-content {
+          padding: 20px;
+      }
+      .inner-card {
+        box-shadow: 0 0 20px rgba(0,0,0,.08);
+        padding: 20px;
+        margin: 10px;
+      }
+      
+      .inner-card h3 {
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 5px;
+      }
+      .inner-card p {
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        margin-top: 0;
+      }
+      .card-package {
+        box-shadow: 0 0 20px rgba(0,0,0,.08);
+        padding: 20px;
+        margin: 10px; 
+      }
+      .card-package h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        color: #303030;
+      }
+      .card-package h3 span {
+          color:#b99044;
+      }
+      .pd-5 {
+          padding-right: 5px;
+      }
+      .bg-yellow {
+        background-color: #b99044;
+    }
+    .info {
+        padding: 3px 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: left;
+    }
+    .p-0 {
+        padding: 0;
+    } 
+    .edit {
+        padding: 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: right;
+    }
+    .info-content {
+        padding: 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 9px;
+        text-align: left;
+        
+    }
+    .brdr-row {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+    .border-top {
+        border-top: 1px solid #dddddd;
+    }
+    .info-edit {
+        padding: 10px;
+        color: #303030;
+        text-transform: uppercase;
+        font-size: 9px;
+        text-align: right;
+        
+    }
+    .info-content-center {
+        padding: 10px;
+        color: #303030;
+        text-transform: uppercase;
+        font-size: 9px;
+        text-align: left;
+        border-left: 1px solid #b99044;
+    }
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+    .table-inner {
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,.08);
+    }
+    .click-btn {
+        --background:#b99044;
+      }
+
+}

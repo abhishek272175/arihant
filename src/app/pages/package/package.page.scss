@@ -1,0 +1,178 @@
+:host {
+    /*.bg-content {
+        --background: url(../../../assets/img/images/bg-login.jpg) no-repeat 100% 100%; 
+      }*/
+      ion-toolbar {
+        --background:#303030;
+      }
+      ion-title {
+        color: #b99044;
+      }
+      .sc-ion-buttons-md-s .button {
+        --background-hover: currentColor;
+        color: #ffffff;
+    }
+      .bg-content {
+        --background: #ffffff; 
+      }
+      .header-inner {
+        text-align: center;
+        padding: 20px 20px;
+        margin: 0;
+      }
+      .header-inner h2 {
+        color: #b99044;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .header-inner p {
+        color: #303030;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .m-0 {
+          margin: 0;
+      }
+      .cont-inner {
+          max-width: 300px;
+          margin: 0 auto;
+      }
+      .single-pricing-table {
+        transition: all 0.5s ease-in-out;
+        box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.5);
+    }
+    .text-center {
+        text-align: center!important;
+    }
+    .pricing-head {
+        padding: 45px 20px;
+        background-color: #303030;
+        position: relative;
+    }
+    .pricing-head .price-cut {
+        position: relative;
+        z-index: 2;
+    }
+    .pricing-head .price-cut > s {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Mada', sans-serif;
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        margin-bottom: 0px;
+    }
+    .pricing-head .price {
+        position: relative;
+        z-index: 2;
+    }
+    .pricing-head .price::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 24px;
+        height: 40px;
+        width: 180px;
+        background-color: #b99044;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+    .pricing-head .price > h2 {
+        color: #fff;
+        font-size: 56px;
+        font-weight: 700;
+        font-family: 'Mada', sans-serif;
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        margin-top: 10px;
+    }
+    .pricing-head .price > h2 > sup {
+        font-size: 26px;
+        margin-left: -10px;
+        position: relative;
+        top: -22px;
+    }
+    .pricing-head > h4 {
+        font-size: 15px;
+        color: #f1f1f1;
+        line-height: 36px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .pricing-head::after {
+        position: absolute;
+        content: "";
+        background-image: url(../../../assets/img/images/price-table.png);
+        bottom: -2px;
+        left: 0;
+        z-index: 2;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 35px;
+        background-size: cover;
+    }
+    .pricing-body {
+        padding: 50px 35px;
+        position: relative;
+        z-index: 9;
+        background-color: #f1f1f1;
+        padding-top: 30px;
+    }
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    .pricing-body > ul > li {
+        font-size: 14px;
+        list-style: none;
+        color: #4d4d4d;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .pricing-body > ul > li::before {
+        content: url(../../../assets/img/images/arrow.png);
+        color: #000;
+        display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    }
+
+    .pricing-footer > a {
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        display: block;
+        color: #c7c7c7;
+        background-color: #303030;
+        padding: 24px 50px;
+        text-decoration: none;
+    }
+    .pricing-footer > a:hover {
+        text-decoration: underline;
+    }
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+    .mt-30 {
+        margin-top: 30px;
+    }
+    .single-pricing-table.pricing-active .pricing-head {
+        background-color: #b99044;
+    }
+    .single-pricing-table.pricing-active .pricing-head .price::before {
+        background-color: #303030;
+    }
+    .single-pricing-table.pricing-active .pricing-footer > a {
+        background-color: #b99044;
+        color: #fff;
+    }
+    
+}

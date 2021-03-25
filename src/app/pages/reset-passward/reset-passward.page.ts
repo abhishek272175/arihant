@@ -1,0 +1,102 @@
+import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+
+import { NavController, MenuController, ToastController, AlertController, LoadingController, ModalController } from '@ionic/angular';
+import { AuthService } from '../../services/auth.service';
+import { AlertService } from '../../services/alert.service';
+
+import { UserData } from '../../providers/user-data';
+
+import { UserOptions } from '../../interfaces/user-options';
+import { Events } from '../../services/events';
+
+
+
+@Component({
+  selector: 'app-reset-passward',
+  templateUrl: './reset-passward.page.html',
+  styleUrls: ['./reset-passward.page.scss'],
+})
+
+export class ResetPasswardPage {
+  login: UserOptions = { username: '', password: '' };
+  submitted = false;
+
+  apiresponse: any;
+
+  constructor(
+
+    private authService: AuthService,
+    public navCtrl: NavController,
+    private alertService: AlertService,
+    public modalCtrl: ModalController,
+    public userData: UserData,
+    public router: Router,
+    public events: Events
+  ) { }
+
+
+  ngOnInit() {
+
+    //	alert("heloo");
+
+    this.events.publish('toggleMenu', {}
+    );
+
+  }
+
+  ionViewWillEnter() {
+
+    this.events.publish('toggleMenu', {}
+    );
+
+  }
+
+
+  onLogin(form: NgForm) {
+    this.submitted = true;
+
+    if (form.valid) {
+
+      this.alertService.presentLoading();
+
+      this.authService.reset_password(this.login.username).subscribe(
+        data => {
+          this.apiresponse = data;
+
+          if (this.apiresponse.status == true) {
+
+            this.events.publish('toggleMenu', {}
+            );
+
+            this.router.navigateByUrl('/login');
+
+            this.alertService.presentToast(this.apiresponse.message);
+            this.alertService.removeLoading();
+
+          }
+          else {
+
+            this.events.publish('toggleMenu', {}
+            );
+
+            this.alertService.presentToast(this.apiresponse.message);
+            this.alertService.removeLoading();
+          }
+        },
+        error => {
+          console.log(error);
+          this.alertService.removeLoading();
+        },
+        () => {
+          // this.dismissLogin();
+          //this.navCtrl.navigateRoot('/following-up');
+        }
+      );
+
+
+    }
+  }
+
+}

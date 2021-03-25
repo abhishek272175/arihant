@@ -1,0 +1,54 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Create Ticket</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content class="bg-content">
+	
+	<div class="inner-page mt-15">
+		<ion-button routerLink="/tickets" class="btn-create"  routerDirection="forward" type="submit" color="light2" expand="block">All Tickets</ion-button>
+	</div>
+    <div class="content-bg">
+		<div class="header-inner">
+			<h2>Create new ticket</h2>
+		</div>
+		<form  #signupForm="ngForm" novalidate >
+			<ion-list lines="full" class="ion-no-margin ion-no-padding">
+				<ion-item color="light">
+					<ion-label position="floating">Ticket Subject</ion-label>
+					<ion-input [(ngModel)]="signup.subject"  name="subject" type="text" #subject="ngModel" spellcheck="false" autocapitalize="off"
+					required>
+					</ion-input>
+					
+				</ion-item>
+				
+				<ion-item color="light">
+					<ion-label position="floating">Ticket Message</ion-label>
+					<ion-textarea [(ngModel)]="signup.message"  name="message" type="text" #message="ngModel" spellcheck="false" autocapitalize="off"
+					required ></ion-textarea>
+				</ion-item>
+				
+				<ion-item class="light">
+					<ion-button color="primary" (click)="takePicture()">Upload File</ion-button>
+					<img *ngIf="selectedImage" [src]="DomSanitizer.bypassSecurityTrustUrl(selectedImage)" style="height: 50px; width: 70px;"/>
+				</ion-item>
+				
+			</ion-list>
+			<div class="btn-box">
+				<ion-row>
+					<ion-col>
+						<ion-button  (click)="onSignup()" type="submit" color="light2" class="sent-btn" expand="block">Create</ion-button>
+					</ion-col>
+					<ion-col>
+						<ion-button color="light3" class="register-btn" expand="block">Cancel</ion-button>
+					</ion-col>
+				</ion-row>
+			</div>
+		</form>
+	</div>
+</ion-content>

@@ -1,0 +1,136 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Tickets</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-content">
+	<div class="header-inner">
+		<h2>Ticket Management</h2>
+		<p>Pocket Law is the leading Second Opinion provider with a reputation of providing best piece of opinion.
+			Create Your Ticket</p>
+	</div>
+
+	<div class="inner-page">
+		<ion-button *ngIf="(this.expdate >= this.curr_date)" routerLink="/create-ticket" class="btn-create"
+			routerDirection="forward" type="submit" color="light2" expand="block">Create Ticket</ion-button>
+
+
+		<div class="card-package" *ngIf="(this.expdate < this.curr_date)">
+			<h3><span class="pd-5">
+					<ion-icon name="card-outline"></ion-icon>
+				</span>You do not have any active package, please click below to start subscription.
+			</h3>
+		</div>
+
+		<br>
+
+		<ion-button *ngIf="(this.expdate < this.curr_date)" (click)="pkg()" class="btn-create" routerDirection="forward"
+			type="submit" color="light2" expand="block">Buy Package</ion-button>
+
+		<div class="card-package" *ngIf="(this.expdate >= this.curr_date)">
+			<br>
+			<h3><span class="pd-5">
+					<ion-icon name="card-outline"></ion-icon>
+				</span>Package Expire on <span>({{this.expdate | date }})</span></h3>
+			<br>
+		</div>
+
+		<div class="table-inner" *ngFor="let item of userinfo; index as i">
+			<ion-row class="brdr-row border-top">
+				<ion-col size="4" class="bg-yellow">
+					<div class="info">
+						#
+					</div>
+				</ion-col>
+				<ion-col size="8" class="p-0">
+					<div class="info-content-center">
+						{{i+1}}
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row class="brdr-row">
+				<ion-col size="4" class="p-0 bg-yellow">
+					<div class="info-content">
+						Ticket Id
+					</div>
+				</ion-col>
+				<ion-col size="8" class="p-0">
+					<div class="info-content-center">
+						{{item.ticketnum}}
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row class="brdr-row">
+				<ion-col size="4" class="p-0 bg-yellow">
+					<div class="info-content">
+						Ticket Subject
+					</div>
+				</ion-col>
+				<ion-col size="8" class="p-0">
+					<div class="info-content-center">
+						{{item.subject}}
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row class="brdr-row">
+				<ion-col size="4" class="p-0 bg-yellow">
+					<div class="info-content">
+						Ticket Message
+					</div>
+				</ion-col>
+				<ion-col size="8" class="p-0">
+					<div class="info-content-center">
+						{{item.message}}
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<ion-row class="brdr-row">
+				<ion-col size="4" class="p-0 bg-yellow">
+					<div class="info-content">
+						Status
+					</div>
+				</ion-col>
+				<ion-col size="8" class="p-0">
+					<div class="info-content-center">
+						{{item.status}}
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row class="brdr-row">
+				<ion-col size="4" class="p-0 bg-yellow">
+					<div class="info-content">
+						Created At
+					</div>
+				</ion-col>
+				<ion-col size="8" class="p-0">
+					<div class="info-content-center">
+
+						{{item.created_at | date: 'dd/MM/yyyy' }} - {{item.created_at | date: 'shortTime' }}
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row class="brdr-row">
+				<ion-col size="4" class="p-0 bg-yellow">
+					<div class="info-content">
+						Actions
+					</div>
+				</ion-col>
+				<ion-col size="8" class="p-0">
+					<div class="info-content-center">
+
+						<ion-button shape="round" class="query-btn" [routerLink]="['/view-ticket/', item.id]"
+							routerDirection="forward">View</ion-button>
+
+					</div>
+				</ion-col>
+			</ion-row>
+		</div>
+
+	</div>
+
+</ion-content>

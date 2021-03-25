@@ -1,0 +1,104 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Registration</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-content">
+	
+	<div class="signup-logo">
+		<img src="assets/img/images/logo.png" alt="Ionic logo">
+	</div>
+	<div class="content-bg">
+		<div class="header-inner">
+			<h2>Create Account</h2>
+		</div>
+		<form #signupForm="ngForm" novalidate>
+			<ion-list class="list-color">
+				<ion-item color="light">
+					<ion-label position="floating" color="primary">First Name</ion-label>
+					<ion-input [(ngModel)]="signup.first_name" name="first_name" type="text" #first_name="ngModel" required>
+					</ion-input>
+				</ion-item>
+				<ion-text color="danger">
+					<p [hidden]="first_name.valid || submitted == false" class="ion-padding-start">
+						First Name is required
+					</p>
+				</ion-text>
+				<ion-item color="light">
+					<ion-label position="floating" color="primary">Last Name</ion-label>
+					<ion-input [(ngModel)]="signup.last_name" name="last_name" type="text" #last_name="ngModel">
+					</ion-input>
+				</ion-item>
+				
+				<ion-item color="light">
+					<ion-label position="floating" color="primary">E-mail</ion-label>
+					<ion-input [(ngModel)]="signup.email" name="email" type="email" #email="ngModel" required>
+					</ion-input>
+				</ion-item>
+				<ion-text color="danger">
+					<p [hidden]="email.valid || submitted == false" class="ion-padding-start">
+						E-mail is required
+					</p>
+				</ion-text>
+				<ion-item color="light">
+					<ion-label position="floating" color="primary">Phone</ion-label>
+					<ion-input [(ngModel)]="signup.phone" name="phone" type="text" #phone="ngModel" required>
+					</ion-input>
+				</ion-item>
+				<ion-text color="danger">
+					<p [hidden]="phone.valid || submitted == false" class="ion-padding-start">
+						Phone is required
+					</p>
+				</ion-text>
+				<ion-item color="light">
+					<ion-label position="floating" color="primary">Password</ion-label>
+					<ion-input [(ngModel)]="signup.password" name="password" type="password" #password="ngModel" required>
+					</ion-input>
+				</ion-item>
+				<ion-text color="danger">
+					<p [hidden]="password.valid || submitted == false" class="ion-padding-start">
+						Password is required
+					</p>
+				</ion-text>
+				<ion-item color="light">
+					<ion-label position="floating" color="primary">Confirm Password</ion-label>
+					<ion-input [(ngModel)]="signup.password_confirmation" name="password_confirmation" type="password"
+					#password_confirmation="ngModel" required>
+					</ion-input>
+				</ion-item>
+				
+				
+				<ion-text color="danger">
+					<p [hidden]="password_confirmation.valid || submitted == false" class="ion-padding-start">
+						Confirm Password is required
+					</p>
+				</ion-text>
+			</ion-list>
+			
+			<ion-item color="light">
+				<ion-label position="floating" color="primary">Confirm Password</ion-label>
+				<ion-input [(ngModel)]="signup.password_confirmation" name="password_confirmation" type="password"
+				#password_confirmation="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<ion-item color="light" lines="none">
+				<ion-checkbox color="dark" slot="start" [(ngModel)]="signup.is_term_accept" value="1" name="is_term_accept" #is_term_accept="ngModel" required ></ion-checkbox>
+				<ion-label><a (click)="openTerms()">Terms &amp; Conditions</a></ion-label>
+			</ion-item>
+			<ion-text color="danger">
+				<p [hidden]="is_term_accept.valid || submitted == false" class="ion-padding-start">
+					Accept Terms &amp; Conditions
+				</p>
+			</ion-text>
+			<div class="ion-padding">
+				<ion-button (click)="onSignup(signupForm)" routerDirection="forward" type="submit" color="light2"
+				class="sent-btn" expand="block">Register</ion-button>
+			</div>
+		</form>
+	</div>
+	
+</ion-content>

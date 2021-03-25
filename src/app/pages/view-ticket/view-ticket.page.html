@@ -1,0 +1,157 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tickets</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-content">
+  <div *ngFor="let itemvie of ticket_view">
+    <div class="header-inner">
+      <h2>Ticket Details</h2>
+    </div>
+    <div class="inner-ticket">
+      <h2>Ticket No : {{itemvie.ticketnum}}</h2>
+      <h2>Status: {{itemvie.status}}</h2>
+      <h2>Created at: {{itemvie.created_at | date}}</h2>
+    </div>
+    <div class="msg-box">
+      <div class="table-inner">
+        <ion-row class="brdr-row border-top">
+          <ion-col size="2" class="bg-grey">
+            <div class="info-icon">
+              <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            </div>
+          </ion-col>
+          <ion-col size="10" class="bg-grey">
+            <div class="info">
+
+              <h2>{{itemvie.first_name}} {{itemvie.last_name}}</h2>
+              <p>{{itemvie.roles}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="p-0">
+            <div class="info-content">
+              {{itemvie.subject}}
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="p-0">
+            <div class="info-content-center">
+              {{itemvie.message}}
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="(itemvie.ticket_document !='' || itemvie.ticket_document == null )">
+          <ion-col size="12" class="p-0">
+            <div class="info-content">
+              Attachment
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="(itemvie.ticket_document !='' || itemvie.ticket_document == null )">
+          <ion-col size="12" class="p-0">
+            <div class="info-content-center ptb-0">
+              <a href="https://uat.thepocketlaw.com/uploads/ {{itemvie.ticket_document}}" routerDirection="forward"
+                data-amount="699" data-id="2" target="_blank">View Attachment</a>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+
+    <div class="msg-box" *ngFor="let item of ticket_reply">
+      <div class="table-inner">
+        <ion-row class="brdr-row border-top">
+          <ion-col size="2" class="bg-grey">
+            <div class="info-icon">
+              <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            </div>
+          </ion-col>
+          <ion-col size="10" class="bg-grey">
+            <div class="info">
+              <h2>{{item.first_name}} {{item.last_name}}</h2>
+              <p>{{item.roles}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="p-0">
+            <div class="info-content">
+              {{item.subject}}
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" class="p-0">
+            <div class="info-content-center">
+              {{item.message}}
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="(item.ticket_document !='' || item.ticket_document == null )">
+          <ion-col size="12" class="p-0">
+            <div class="info-content">
+              Attachment
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="(item.ticket_document !='' || item.ticket_document == null)">
+          <ion-col size="12" class="p-0">
+            <div class="info-content-center ptb-0">
+              <a href="https://uat.thepocketlaw.com/uploads/{{item.ticket_document}}" routerDirection="forward"
+                data-amount="699" data-id="2" target="_blank">View Attachment</a>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+
+    <div class="reply"  *ngIf="(itemvie.status == 'Open')" >
+      <div class="reply-header">
+        <h2>Reply Query</h2>
+      </div>
+
+      <form #signupForm="ngForm" novalidate>
+        <div class="content-bg">
+
+          <ion-input [hidden]="repview == false" [(ngModel)]="signup.ticketnum" value="{{itemvie.ticketnum}}"
+            name="ticketnum" type="text" #ticketnum="ngModel" spellcheck="false" autocapitalize="off"></ion-input>
+
+          <ion-list lines="full" class="ion-no-margin ion-no-padding bg-grey">
+            <ion-item color="light">
+              <ion-label position="floating">Ticket Message</ion-label>
+              <ion-textarea [(ngModel)]="signup.message" name="message" type="text" #message="ngModel"
+                spellcheck="false" autocapitalize="off" required></ion-textarea>
+            </ion-item>
+            <ion-item color="light">
+              <ion-button color="primary" (click)="takePicture()">Upload File</ion-button>
+              <img *ngIf="selectedImage" [src]="DomSanitizer.bypassSecurityTrustUrl(selectedImage)"
+                style="height: 50px; width: 70px;" />
+            </ion-item>
+          </ion-list>
+          <div class="btn-box">
+            <ion-row>
+              <ion-col>
+                <ion-button (click)="onSignup()" type="submit" color="light2" class="sent-btn" expand="block">Submit
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button color="light3" class="register-btn" expand="block">Cancel</ion-button>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Our Packages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-content">
+  <div class="header-inner">
+    <h2>Choose your package</h2>
+    <p>Pocket Law is the leading Second Opinion provider with a reputation of providing best piece of opinion. Start by
+      selecting the package from below</p>
+  </div>
+  <div class="cont-inner">
+
+    <ion-row *ngFor="let item of userinfo">
+
+      <div [ngClass]="{'pricing-active' : item.id==2}" class="single-pricing-table text-center mb-30 ">
+        <div class="pricing-head">
+          <div class="price-cut">
+            <s>&#8377; {{item.original_amount}}</s>
+          </div>
+          <div class="price">
+            <h2><sup>&#8377;</sup>{{item.Amount}}</h2>
+          </div>
+          <h4>{{item.package_name}}</h4>
+        </div>
+
+        <div class="pricing-body">
+          <ul>
+            <li *ngFor="let desc of item.Discription.split('.')">{{desc}}</li>
+
+            <li *ngIf="(item.Totalmonths == 12)">Client would be provided with:
+              <ol class="ordlist" type="i">
+                <li style="padding-top:12px;">30 minutes video consultation - 6 times in a year</li>
+                <li style="list-style-type:none;">OR</li>
+                <li>One to one consultation for 3 times in a year at our office.
+                  with our professional experts in the given duration.</li>
+              </ol>
+            </li>
+            <li *ngIf="(item.Totalmonths == 12)" >Confirm Revert within 24 Hours</li>
+
+          </ul>
+        </div>
+        <div class="pricing-footer"><a href="javascript:void(0)" (click)="checklogin_for_package(item.Amount,item.id)"
+            routerDirection="forward" data-amount="6999" data-id="5" class="btn btn-small buy_now">Select Plan</a></div>
+      </div>
+    </ion-row>
+  </div>
+</ion-content>
