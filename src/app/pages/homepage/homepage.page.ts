@@ -44,7 +44,9 @@ export class HomepagePage implements OnInit {
   ourservices() {
 		this.router.navigateByUrl('/our-services');
 	}
-
+  home() {
+		this.router.navigateByUrl('/home');
+	}
   ionViewWillEnter() {
 
 		this.events.publish('toggleMenu', {}

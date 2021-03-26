@@ -75,6 +75,26 @@ const routes: Routes = [
   {
     path: 'reset-passward',
     loadChildren: () => import('./pages/reset-passward/reset-passward.module').then( m => m.ResetPasswardPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'login-page',
+    loadChildren: () => import('./pages/login-page/login-page.module').then( m => m.LoginPagePageModule)
+  },
+  {
+    path: 'google-login',
+    loadChildren: () => import('./pages/google-login/google-login.module').then( m => m.GoogleLoginPageModule)
+  },
+  {
+    path: 'add-device',
+    loadChildren: () => import('./pages/add-device/add-device.module').then( m => m.AddDevicePageModule)
+  },
+  {
+    path: 'device-options',
+    loadChildren: () => import('./pages/device-options/device-options.module').then( m => m.DeviceOptionsPageModule)
   }
 
 
