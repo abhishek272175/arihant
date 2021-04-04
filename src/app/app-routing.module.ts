@@ -95,6 +95,34 @@ const routes: Routes = [
   {
     path: 'device-options',
     loadChildren: () => import('./pages/device-options/device-options.module').then( m => m.DeviceOptionsPageModule)
+  },
+  {
+    path: 'adding-device',
+    loadChildren: () => import('./adding-device/adding-device.module').then( m => m.AddingDevicePageModule)
+  },
+  {
+    path: 'switch-options',
+    loadChildren: () => import('./switch-options/switch-options.module').then( m => m.SwitchOptionsPageModule)
+  },
+  {
+    path: 'adding-device',
+    loadChildren: () => import('./pages/adding-device/adding-device.module').then( m => m.AddingDevicePageModule)
+  },
+  {
+    path: 'switch-options',
+    loadChildren: () => import('./pages/switch-options/switch-options.module').then( m => m.SwitchOptionsPageModule)
+  },
+  {
+    path: 'switches',
+    loadChildren: () => import('./pages/switches/switches.module').then( m => m.SwitchesPageModule)
+  },
+  {
+    path: 'device-adding',
+    loadChildren: () => import('./pages/device-adding/device-adding.module').then( m => m.DeviceAddingPageModule)
+  },
+  {
+    path: 'login-otp',
+    loadChildren: () => import('./pages/login-otp/login-otp.module').then( m => m.LoginOtpPageModule)
   }
 
 

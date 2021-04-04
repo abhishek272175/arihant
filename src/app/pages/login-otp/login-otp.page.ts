@@ -3,24 +3,23 @@ import { Events } from '../../services/events';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-login-page',
-  templateUrl: './login-page.page.html',
-  styleUrls: ['./login-page.page.scss'],
+  selector: 'app-login-otp',
+  templateUrl: './login-otp.page.html',
+  styleUrls: ['./login-otp.page.scss'],
 })
-export class LoginPagePage implements OnInit {
+export class LoginOtpPage implements OnInit {
 
   constructor(
     public events: Events,
     private authService: AuthService,
     public router: Router
-
   ) { }
 
   ngOnInit() {
   }
-
   googleLogin() {
-		this.router.navigateByUrl('/login-otp');
+		this.router.navigateByUrl('/google-login');
 	}
 }
