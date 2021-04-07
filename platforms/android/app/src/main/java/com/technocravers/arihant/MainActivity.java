@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.technocravers.thepocketlaw;
+package com.technocravers.arihant;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
