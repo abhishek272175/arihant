@@ -105,9 +105,9 @@ export class AppComponent implements OnInit {
 		//debugger;
 		this.authService.getToken().then(isLoggedIn => {
 			if (isLoggedIn != null) {
-				this.router.navigateByUrl("/package");
+				this.router.navigateByUrl("/home");
 				} else {
-				this.router.navigateByUrl("/login");
+				this.router.navigateByUrl("/login-page");
 			}
 		});
 		
@@ -130,7 +130,7 @@ export class AppComponent implements OnInit {
 					});
 					
 					} else {
-					this.router.navigateByUrl("/homepage");
+					this.router.navigateByUrl("/home");
 				}
 				this.splashScreen.hide();
 			});
@@ -180,7 +180,7 @@ export class AppComponent implements OnInit {
 				
 				this.utype ='';
 				
-				return this.router.navigateByUrl('/homepage');
+				return this.router.navigateByUrl('/login-page');
 			}
 		);
 	}
