@@ -35,7 +35,11 @@
         --handle-width:200px;
         --handle-height:200px;
       }
-      
+      .colorpick {
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+      }
      .top-btn {
          height: 110px;
      }
