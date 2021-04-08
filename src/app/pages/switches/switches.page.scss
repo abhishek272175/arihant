@@ -20,6 +20,22 @@
     .color-picker {
         text-align: center;
     }
+     .range-bar {
+        background: #808184;
+    }
+   
+    
+
+    ion-toggle {
+        width: 76px;
+        height: 76px;
+        --border-radius: 50%;
+        --handle-background-checked: transparent url(../../../assets/img/images/on-icon.png) no-repeat center / contain;
+        --handle-background: transparent url(../../../assets/img/images/off-icon.png) no-repeat center / contain;
+        --handle-width:200px;
+        --handle-height:200px;
+      }
+      
      .top-btn {
          height: 110px;
      }

@@ -16,9 +16,10 @@ import { FormsModule } from '@angular/forms';
 import { File } from '@ionic-native/file/ngx';
 import { Camera } from '@ionic-native/camera/ngx';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
-
+import {IonicColorPickerModule} from 'ionic-color-picker';
 @NgModule({
   imports: [
+    IonicColorPickerModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
