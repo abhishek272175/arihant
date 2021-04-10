@@ -1084,6 +1084,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ionic-native/file/ngx */ "./node_modules/@ionic-native/file/ngx/index.js");
 /* harmony import */ var _ionic_native_camera_ngx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ionic-native/camera/ngx */ "./node_modules/@ionic-native/camera/ngx/index.js");
 /* harmony import */ var _ionic_native_ionic_webview_ngx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @ionic-native/ionic-webview/ngx */ "./node_modules/@ionic-native/ionic-webview/ngx/index.js");
+/* harmony import */ var ionic_color_picker__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ionic-color-picker */ "./node_modules/ionic-color-picker/dist/src/index.js");
+
 
 
 
@@ -1106,6 +1108,7 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         imports: [
+            ionic_color_picker__WEBPACK_IMPORTED_MODULE_17__["IonicColorPickerModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"],
