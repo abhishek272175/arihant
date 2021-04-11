@@ -14,6 +14,9 @@ export class SwitchesPage implements OnInit {
 
   constructor() { }
 
+  ishidden = true;
+  ishiddenof = false;
+
   ngOnInit() {
     let ref = this;
     var colorPicker = iro.ColorPicker("#picker",{width:150, color:"#ffffff"})
@@ -23,5 +26,21 @@ export class SwitchesPage implements OnInit {
       ref.colorcode = color.hexstring;
     })
   }
+
+  switcheson() {
+
+    this.ishidden = true;
+    this.ishiddenof = false;
+
+  }
+
+  switchesoff() {
+
+    this.ishiddenof = true;
+    this.ishidden = false;
+
+  }
+
+
 
 }

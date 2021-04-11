@@ -6,8 +6,8 @@
     <div class="center-content">
       <ion-buttons>
         Switch 1
-        <a (click)="switches()" color="light2" class="front-btn" ><img src="assets/img/images/on-icon.png"></a>
-        <a (click)="addingDevice()" color="light2" class="front-btn" ><img src="assets/img/images/off-icon.png"></a>
+        <a (click)="switcheson()" color="light2" class="front-btn" [hidden]=ishidden ><img src="assets/img/images/on-icon.png"></a>
+        <a (click)="switchesoff()" color="light2" class="front-btn" [hidden]=ishiddenof  ><img src="assets/img/images/off-icon.png"></a>
        
       </ion-buttons>
      
