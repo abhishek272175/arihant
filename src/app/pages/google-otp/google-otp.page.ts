@@ -3,12 +3,13 @@ import { Events } from '../../services/events';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-google-login',
-  templateUrl: './google-login.page.html',
-  styleUrls: ['./google-login.page.scss'],
+  selector: 'app-google-otp',
+  templateUrl: './google-otp.page.html',
+  styleUrls: ['./google-otp.page.scss'],
 })
-export class GoogleLoginPage implements OnInit {
+export class GoogleOtpPage implements OnInit {
 
   constructor(
     public events: Events,
@@ -18,7 +19,8 @@ export class GoogleLoginPage implements OnInit {
 
   ngOnInit() {
   }
-  addDevice() {
-		this.router.navigateByUrl('/google-otp');
+  googleLogin() {
+		this.router.navigateByUrl('/ssid-login');
 	}
+
 }

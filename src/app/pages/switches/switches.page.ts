@@ -26,7 +26,7 @@ export class SwitchesPage implements OnInit {
       ref.colorcode = color.hexstring;
     })
   }
-
+  
   switcheson() {
 
     this.ishidden = true;
@@ -41,6 +41,5 @@ export class SwitchesPage implements OnInit {
 
   }
 
-
-
+  
 }

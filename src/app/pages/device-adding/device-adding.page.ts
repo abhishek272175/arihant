@@ -19,6 +19,6 @@ export class DeviceAddingPage implements OnInit {
   ngOnInit() {
   }
   switches() {
-		this.router.navigateByUrl('/switches');
+		this.router.navigateByUrl('/all-button');
 	}
 }

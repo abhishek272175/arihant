@@ -4,11 +4,11 @@ import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-google-login',
-  templateUrl: './google-login.page.html',
-  styleUrls: ['./google-login.page.scss'],
+  selector: 'app-single-button',
+  templateUrl: './single-button.page.html',
+  styleUrls: ['./single-button.page.scss'],
 })
-export class GoogleLoginPage implements OnInit {
+export class SingleButtonPage implements OnInit {
 
   constructor(
     public events: Events,
@@ -18,7 +18,7 @@ export class GoogleLoginPage implements OnInit {
 
   ngOnInit() {
   }
-  addDevice() {
-		this.router.navigateByUrl('/google-otp');
+  switches() {
+		this.router.navigateByUrl('/switches');
 	}
 }

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="top-btn">
+      <img src="assets/img/images/logo-arihant-small.png">
+    </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="top-btn">
+      <img src="assets/img/images/plus-icon.png">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-content">
+  <div class="btn-box">
+    <div>
+    <ion-item lines="none">
+      <ion-icon name="person" class="m-rght" slot="start"></ion-icon>
+      <ion-label>SSID:</ion-label>
+      <ion-input value="XYZ" ></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="lock-closed" class="m-rght" slot="start"></ion-icon>
+      <ion-label>Password:</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <div class="text-center">
+    <ion-button (click)="deviceOptions()" color="light2" class="front-btn" >Log In</ion-button>
+  </div>
+    </div>
+  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="schedule" >
+        <img src="assets/img/images/home.png">
+        <ion-label class="label-color">Schedule</ion-label>
+      </ion-tab-button>
+      <ion-tab-button>
+        </ion-tab-button>
+      
+  
+      <ion-tab-button tab="about">
+        <img src="assets/img/images/user.png">
+        <ion-label class="label-color">About</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

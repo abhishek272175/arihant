@@ -123,6 +123,22 @@ const routes: Routes = [
   {
     path: 'login-otp',
     loadChildren: () => import('./pages/login-otp/login-otp.module').then( m => m.LoginOtpPageModule)
+  },
+  {
+    path: 'ssid-login',
+    loadChildren: () => import('./pages/ssid-login/ssid-login.module').then( m => m.SsidLoginPageModule)
+  },
+  {
+    path: 'all-button',
+    loadChildren: () => import('./pages/all-button/all-button.module').then( m => m.AllButtonPageModule)
+  },
+  {
+    path: 'single-button',
+    loadChildren: () => import('./pages/single-button/single-button.module').then( m => m.SingleButtonPageModule)
+  },
+  {
+    path: 'google-otp',
+    loadChildren: () => import('./pages/google-otp/google-otp.module').then( m => m.GoogleOtpPageModule)
   }
 
 
