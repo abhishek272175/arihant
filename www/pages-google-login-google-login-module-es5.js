@@ -245,7 +245,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addDevice",
         value: function addDevice() {
-          this.router.navigateByUrl('/add-device');
+          this.router.navigateByUrl('/google-otp');
         }
       }]);
 

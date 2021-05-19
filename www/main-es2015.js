@@ -827,6 +827,22 @@ const routes = [
     {
         path: 'login-otp',
         loadChildren: () => __webpack_require__.e(/*! import() | pages-login-otp-login-otp-module */ "pages-login-otp-login-otp-module").then(__webpack_require__.bind(null, /*! ./pages/login-otp/login-otp.module */ "./src/app/pages/login-otp/login-otp.module.ts")).then(m => m.LoginOtpPageModule)
+    },
+    {
+        path: 'ssid-login',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-ssid-login-ssid-login-module */ "pages-ssid-login-ssid-login-module").then(__webpack_require__.bind(null, /*! ./pages/ssid-login/ssid-login.module */ "./src/app/pages/ssid-login/ssid-login.module.ts")).then(m => m.SsidLoginPageModule)
+    },
+    {
+        path: 'all-button',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-all-button-all-button-module */ "pages-all-button-all-button-module").then(__webpack_require__.bind(null, /*! ./pages/all-button/all-button.module */ "./src/app/pages/all-button/all-button.module.ts")).then(m => m.AllButtonPageModule)
+    },
+    {
+        path: 'single-button',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-single-button-single-button-module */ "pages-single-button-single-button-module").then(__webpack_require__.bind(null, /*! ./pages/single-button/single-button.module */ "./src/app/pages/single-button/single-button.module.ts")).then(m => m.SingleButtonPageModule)
+    },
+    {
+        path: 'google-otp',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-google-otp-google-otp-module */ "pages-google-otp-google-otp-module").then(__webpack_require__.bind(null, /*! ./pages/google-otp/google-otp.module */ "./src/app/pages/google-otp/google-otp.module.ts")).then(m => m.GoogleOtpPageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {

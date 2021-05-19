@@ -134,7 +134,7 @@ let GoogleLoginPage = class GoogleLoginPage {
     ngOnInit() {
     }
     addDevice() {
-        this.router.navigateByUrl('/add-device');
+        this.router.navigateByUrl('/google-otp');
     }
 };
 GoogleLoginPage.ctorParameters = () => [

@@ -134,7 +134,7 @@ let DeviceAddingPage = class DeviceAddingPage {
     ngOnInit() {
     }
     switches() {
-        this.router.navigateByUrl('/switches');
+        this.router.navigateByUrl('/all-button');
     }
 };
 DeviceAddingPage.ctorParameters = () => [

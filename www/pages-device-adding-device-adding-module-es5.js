@@ -245,7 +245,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "switches",
         value: function switches() {
-          this.router.navigateByUrl('/switches');
+          this.router.navigateByUrl('/all-button');
         }
       }]);
 

@@ -15,24 +15,97 @@ export class AllButtonPage implements OnInit {
     private authService: AuthService,
     public router: Router
   ) { }
-  ishidden = true;
-  ishiddenof = false;
+  ishidden2 = true;
+  ishiddenof2 = false;
+
+  ishidden3 = true;
+  ishiddenof3 = false;
+
+  ishidden4 = true;
+  ishiddenof4 = false;
+
+
+  ishidden5 = true;
+  ishiddenof5 = false;
+
+
+  ishidden6 = true;
+  ishiddenof6 = false;
+
+
   ngOnInit() {
   }
   singleswitch() {
 		this.router.navigateByUrl('/single-button');
 	}
-  switcheson() {
 
-    this.ishidden = true;
-    this.ishiddenof = false;
+  switcheson2() {
+
+    this.ishidden2 = true;
+    this.ishiddenof2 = false;
 
   }
 
-  switchesoff() {
+  switcheson3() {
 
-    this.ishiddenof = true;
-    this.ishidden = false;
+    this.ishidden3 = true;
+    this.ishiddenof3 = false;
+
+  }
+
+  switcheson4() {
+
+    this.ishidden4 = true;
+    this.ishiddenof4 = false;
+
+  }
+
+  switcheson5() {
+
+    this.ishidden5 = true;
+    this.ishiddenof5 = false;
+
+  }
+
+  switcheson6() {
+
+    this.ishidden6 = true;
+    this.ishiddenof6 = false;
+
+  }
+
+  switchesoff2() {
+
+    this.ishiddenof2 = true;
+    this.ishidden2 = false;
+
+  }
+
+  switchesoff3() {
+
+    this.ishiddenof3 = true;
+    this.ishidden3 = false;
+
+  }
+
+  switchesoff4() {
+
+    this.ishiddenof4 = true;
+    this.ishidden4 = false;
+
+  }
+
+  switchesoff5() {
+
+    this.ishiddenof5 = true;
+    this.ishidden5 = false;
+
+  }
+
+  switchesoff6() {
+
+    this.ishiddenof6 = true;
+    this.ishidden6 = false;
 
   }
 
