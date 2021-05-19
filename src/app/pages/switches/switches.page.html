@@ -10,9 +10,27 @@
         <a (click)="switchesoff()" color="light2" class="front-btn" [hidden]=ishiddenof  ><img src="assets/img/images/off-icon.png"></a>
        
       </ion-buttons>
+      <ion-buttons>
+        Switch 2
+        <a (click)="switcheson2()" color="light2" class="front-btn" [hidden]=ishidden2 ><img src="assets/img/images/on-icon.png"></a>
+        <a (click)="switchesoff2()" color="light2" class="front-btn" [hidden]=ishiddenof2  ><img src="assets/img/images/off-icon.png"></a>
+       
+      </ion-buttons>
+      <ion-buttons>
+        Switch 3
+        <a (click)="switcheson3()" color="light2" class="front-btn" [hidden]=ishidden3 ><img src="assets/img/images/on-icon.png"></a>
+        <a (click)="switchesoff3()" color="light2" class="front-btn" [hidden]=ishiddenof3  ><img src="assets/img/images/off-icon.png"></a>
+       
+      </ion-buttons>
+      <ion-buttons>
+        Switch all
+        <a (click)="switcheson4()" color="light2" class="front-btn" [hidden]=ishidden4 ><img src="assets/img/images/on-icon.png"></a>
+        <a (click)="switchesoff4()" color="light2" class="front-btn" [hidden]=ishiddenof4  ><img src="assets/img/images/off-icon.png"></a>
+       
+      </ion-buttons>
      
       <ion-item lines="none">
-        <ion-range value="20" color="primary">
+        <ion-range min="0" max="5" step="1" value="0" pin snaps color="primary">
           <ion-icon slot="start" size="small" name="remove-outline"></ion-icon>
           <ion-icon slot="end"  name="add-outline"></ion-icon>
         </ion-range>
@@ -24,14 +42,8 @@
           <ion-col size="12">
             <div class="color-picker">
             <div class="colorpick" id="picker">
-              <br>
-              <div>
-                <ion-text>
-                  {{colorcode}}
-                </ion-text>
-              </div>
-
             </div>
+            <div id="values"></div>
             </div>
           </ion-col>
         </ion-row>

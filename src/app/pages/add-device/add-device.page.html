@@ -6,7 +6,7 @@
     </ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button class="top-btn">
+      <ion-button (click)="deviceOptions()" class="top-btn">
       <img src="assets/img/images/plus-icon.png">
       </ion-button>
     </ion-buttons>
@@ -22,17 +22,17 @@
   </div>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="schedule" >
+      <ion-tab-button (click)="home()" tab="schedule" >
         <img src="assets/img/images/home.png">
-        <ion-label class="label-color">Schedule</ion-label>
+        <ion-label class="label-color">Home</ion-label>
       </ion-tab-button>
       <ion-tab-button>
         </ion-tab-button>
       
   
-      <ion-tab-button tab="about">
+        <ion-tab-button (click)="profile()" tab="about">
         <img src="assets/img/images/user.png">
-        <ion-label class="label-color">About</ion-label>
+        <ion-label class="label-color">Profile</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>

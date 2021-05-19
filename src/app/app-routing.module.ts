@@ -139,6 +139,26 @@ const routes: Routes = [
   {
     path: 'google-otp',
     loadChildren: () => import('./pages/google-otp/google-otp.module').then( m => m.GoogleOtpPageModule)
+  },
+  {
+    path: 'device-adding1',
+    loadChildren: () => import('./pages/device-adding1/device-adding1.module').then( m => m.DeviceAdding1PageModule)
+  },
+  {
+    path: 'device-adding2',
+    loadChildren: () => import('./pages/device-adding2/device-adding2.module').then( m => m.DeviceAdding2PageModule)
+  },
+  {
+    path: 'device-adding3',
+    loadChildren: () => import('./pages/device-adding3/device-adding3.module').then( m => m.DeviceAdding3PageModule)
+  },
+  {
+    path: 'arihant-demo',
+    loadChildren: () => import('./pages/arihant-demo/arihant-demo.module').then( m => m.ArihantDemoPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
   }
 
 

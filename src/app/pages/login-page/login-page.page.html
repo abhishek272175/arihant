@@ -16,9 +16,15 @@
       <ion-label>Password:</ion-label>
       <ion-input type="password"></ion-input>
     </ion-item>
+    <div class="text-right">
+      <a class="forgot-password" (click)="reset()">Forgot Password?</a>
+    </div>
     <div class="text-center">
-    <ion-button (click)="googleLogin()" color="light2" class="front-btn" >Log In</ion-button>
+    <ion-button (click)="addDevice()" color="light2" class="front-btn" >Log In</ion-button>
+    <p>or login with</p>
+    <a (click)="addDevice()"><img src="assets/img/images/google-logo.png"></a>
   </div>
+  
   </div>
 
 </ion-content>

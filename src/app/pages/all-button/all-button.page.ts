@@ -15,6 +15,9 @@ export class AllButtonPage implements OnInit {
     private authService: AuthService,
     public router: Router
   ) { }
+  ishidden = true;
+  ishiddenof = false;
+
   ishidden2 = true;
   ishiddenof2 = false;
 
@@ -38,7 +41,12 @@ export class AllButtonPage implements OnInit {
   singleswitch() {
 		this.router.navigateByUrl('/single-button');
 	}
+  switcheson() {
 
+    this.ishidden = true;
+    this.ishiddenof = false;
+
+  }
   switcheson2() {
 
     this.ishidden2 = true;
@@ -73,7 +81,12 @@ export class AllButtonPage implements OnInit {
     this.ishiddenof6 = false;
 
   }
+  switchesoff() {
 
+    this.ishiddenof = true;
+    this.ishidden = false;
+
+  }
   switchesoff2() {
 
     this.ishiddenof2 = true;

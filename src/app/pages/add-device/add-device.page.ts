@@ -21,4 +21,10 @@ export class AddDevicePage implements OnInit {
   deviceOptions() {
 		this.router.navigateByUrl('/device-options');
 	}
+  home() {
+		this.router.navigateByUrl('/home');
+	}
+  profile() {
+		this.router.navigateByUrl('/profile');
+	}
 }

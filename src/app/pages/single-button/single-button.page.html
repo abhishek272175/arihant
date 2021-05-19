@@ -6,18 +6,31 @@
     <div class="center-content">
       <ion-buttons>
         Switch 1
-        <a (click)="switches()" color="light2" class="front-btn" ><img src="assets/img/images/on-icon.png"></a>
-        <a (click)="switches()" color="light2" class="front-btn" ><img src="assets/img/images/off-icon.png"></a>
+        <a (click)="switcheson()" color="light2" class="front-btn" [hidden]=ishidden ><img src="assets/img/images/on-icon.png"></a>
+        <a (click)="switchesoff()" color="light2" class="front-btn" [hidden]=ishiddenof  ><img src="assets/img/images/off-icon.png"></a>
        
       </ion-buttons>
      
       <ion-item lines="none">
-        <ion-range value="20" color="primary">
+        <ion-range min="0" max="5" step="1" value="0" pin snaps color="primary">
+         
           <ion-icon slot="start" size="small" name="remove-outline"></ion-icon>
           <ion-icon slot="end"  name="add-outline"></ion-icon>
         </ion-range>
       </ion-item>
-     
+      <ion-grid>
+        <ion-row>
+          
+          
+          <ion-col size="12">
+            <div class="color-picker">
+            <div class="colorpick" id="picker">
+            </div>
+            <div id="values"></div>
+            </div>
+          </ion-col>
+        </ion-row>
+        </ion-grid>
       
      
   </div>

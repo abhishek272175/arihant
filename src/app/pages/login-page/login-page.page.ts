@@ -20,7 +20,11 @@ export class LoginPagePage implements OnInit {
   ngOnInit() {
   }
 
-  googleLogin() {
-		this.router.navigateByUrl('/login-otp');
+  
+  addDevice() {
+		this.router.navigateByUrl('/google-otp');
+	}
+  reset() {
+		this.router.navigateByUrl('/reset-passward');
 	}
 }

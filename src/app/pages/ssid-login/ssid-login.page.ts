@@ -21,5 +21,11 @@ export class SsidLoginPage implements OnInit {
   deviceOptions() {
 		this.router.navigateByUrl('/add-device');
 	}
+  home() {
+		this.router.navigateByUrl('/home');
+	}
+  profile() {
+		this.router.navigateByUrl('/profile');
+	}
 
 }
