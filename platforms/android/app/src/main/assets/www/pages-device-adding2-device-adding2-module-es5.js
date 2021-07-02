@@ -245,17 +245,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "switches",
         value: function switches() {
-          this.router.navigateByUrl('/switches');
+          this.router.navigateByUrl("/arihant-demo");
         }
       }, {
         key: "home",
         value: function home() {
-          this.router.navigateByUrl('/home');
+          this.router.navigateByUrl("/home");
         }
       }, {
         key: "profile",
         value: function profile() {
-          this.router.navigateByUrl('/profile');
+          this.router.navigateByUrl("/profile");
         }
       }]);
 
@@ -273,7 +273,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     DeviceAdding2Page = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-device-adding2',
+      selector: "app-device-adding2",
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./device-adding2.page.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/device-adding2/device-adding2.page.html")).default,
