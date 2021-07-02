@@ -1,0 +1,28 @@
+<ion-content class="bg-content">
+  <div class="logo-area">
+    <img src="assets/img/images/logo-arihant.png" class="logo-margin" />
+    <h1>Smart Solution</h1>
+  </div>
+  <div class="btn-box">
+    <ion-item lines="none">
+      <ion-icon name="person" class="m-rght" slot="start"></ion-icon>
+      <ion-label>Email:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="lock-closed" class="m-rght" slot="start"></ion-icon>
+      <ion-label>Password:</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <div class="text-center">
+      <ion-button (click)="addDevice()" color="light2" class="front-btn"
+        >Sign Up</ion-button
+      >
+      <p>or login with</p>
+      <a (click)="addDevice()"
+        ><img src="assets/img/images/google-logo.png"
+      /></a>
+    </div>
+  </div>
+</ion-content>

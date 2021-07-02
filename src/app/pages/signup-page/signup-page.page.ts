@@ -4,11 +4,11 @@ import { AuthService } from "../../services/auth.service";
 import { Router } from "@angular/router";
 
 @Component({
-  selector: "app-login-page",
-  templateUrl: "./login-page.page.html",
-  styleUrls: ["./login-page.page.scss"],
+  selector: "app-signup-page",
+  templateUrl: "./signup-page.page.html",
+  styleUrls: ["./signup-page.page.scss"],
 })
-export class LoginPagePage implements OnInit {
+export class SignupPagePage implements OnInit {
   constructor(
     public events: Events,
     private authService: AuthService,
@@ -16,7 +16,6 @@ export class LoginPagePage implements OnInit {
   ) {}
 
   ngOnInit() {}
-
   addDevice() {
     this.router.navigateByUrl("/google-otp");
   }
