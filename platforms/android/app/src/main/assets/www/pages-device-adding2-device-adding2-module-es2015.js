@@ -131,16 +131,15 @@ let DeviceAdding2Page = class DeviceAdding2Page {
         this.authService = authService;
         this.router = router;
     }
-    ngOnInit() {
-    }
+    ngOnInit() { }
     switches() {
-        this.router.navigateByUrl('/switches');
+        this.router.navigateByUrl("/arihant-demo");
     }
     home() {
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl("/home");
     }
     profile() {
-        this.router.navigateByUrl('/profile');
+        this.router.navigateByUrl("/profile");
     }
 };
 DeviceAdding2Page.ctorParameters = () => [
@@ -150,7 +149,7 @@ DeviceAdding2Page.ctorParameters = () => [
 ];
 DeviceAdding2Page = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-device-adding2',
+        selector: "app-device-adding2",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./device-adding2.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/device-adding2/device-adding2.page.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./device-adding2.page.scss */ "./src/app/pages/device-adding2/device-adding2.page.scss")).default]
     }),

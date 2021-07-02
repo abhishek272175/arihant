@@ -137,7 +137,10 @@ let SwitchesPage = class SwitchesPage {
         let ref = this;
         var values = document.getElementById("values");
         var hexInput = document.getElementById("hexInput");
-        var colorPicker = _jaames_iro__WEBPACK_IMPORTED_MODULE_2__["default"].ColorPicker("#picker", { width: 150, color: "#ffffff" });
+        var colorPicker = _jaames_iro__WEBPACK_IMPORTED_MODULE_2__["default"].ColorPicker("#picker", {
+            width: 150,
+            color: "#ffffff",
+        });
         colorPicker.on(["color:init", "color:change"], function (color) {
             values.innerHTML = [
                 "hex: " + color.hexString,
@@ -179,7 +182,7 @@ let SwitchesPage = class SwitchesPage {
 };
 SwitchesPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-switches',
+        selector: "app-switches",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./switches.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/switches/switches.page.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./switches.page.scss */ "./src/app/pages/switches/switches.page.scss")).default]
     }),
