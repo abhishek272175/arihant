@@ -38,6 +38,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.technocravers.arihant"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.technocravers.arihant"
     }
   },
   "dependent_plugins": {}

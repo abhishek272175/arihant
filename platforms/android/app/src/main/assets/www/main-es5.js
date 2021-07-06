@@ -1223,6 +1223,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return m.ProfilePageModule;
         });
       }
+    }, {
+      path: 'signup-page',
+      loadChildren: function loadChildren() {
+        return __webpack_require__.e(
+        /*! import() | pages-signup-page-signup-page-module */
+        "pages-signup-page-signup-page-module").then(__webpack_require__.bind(null,
+        /*! ./pages/signup-page/signup-page.module */
+        "./src/app/pages/signup-page/signup-page.module.ts")).then(function (m) {
+          return m.SignupPagePageModule;
+        });
+      }
     }];
 
     var AppRoutingModule = function AppRoutingModule() {

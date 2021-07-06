@@ -245,12 +245,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "addDevice",
         value: function addDevice() {
-          this.router.navigateByUrl('/google-otp');
+          this.router.navigateByUrl("/google-otp");
         }
       }, {
         key: "reset",
         value: function reset() {
-          this.router.navigateByUrl('/reset-passward');
+          this.router.navigateByUrl("/reset-passward");
         }
       }]);
 
@@ -268,7 +268,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     LoginPagePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-login-page',
+      selector: "app-login-page",
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./login-page.page.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/login-page/login-page.page.html")).default,

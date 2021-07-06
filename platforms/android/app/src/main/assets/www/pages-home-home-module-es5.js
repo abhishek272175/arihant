@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content class=\"bg-content\">\r\n  <div class=\"logo-area\">\r\n    <img src=\"assets/img/images/logo-arihant.png\" class=\"logo-margin\" />\r\n    <h1>Smart Solution</h1>\r\n  </div>\r\n  <div class=\"btn-box\">\r\n    <ion-button (click)=\"login()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Log In</ion-button>\r\n    <ion-button (click)=\"login()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Sign Up</ion-button>\r\n    <!--<ion-button (click)=\"onSignup()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Try it Now</ion-button>-->\r\n  </div>\r\n</ion-content>\r\n";
+    __webpack_exports__["default"] = "<ion-content class=\"bg-content\">\r\n  <div class=\"logo-area\">\r\n    <img src=\"assets/img/images/logo-arihant.png\" class=\"logo-margin\" />\r\n    <h1>Smart Solution</h1>\r\n  </div>\r\n  <div class=\"btn-box\">\r\n    <ion-button\r\n      (click)=\"login()\"\r\n      color=\"light2\"\r\n      class=\"front-btn\"\r\n      expand=\"block\"\r\n      >Log In</ion-button\r\n    >\r\n    <ion-button\r\n      (click)=\"signup()\"\r\n      color=\"light2\"\r\n      class=\"front-btn\"\r\n      expand=\"block\"\r\n      >Sign Up</ion-button\r\n    >\r\n    <!--<ion-button (click)=\"onSignup()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Try it Now</ion-button>-->\r\n  </div>\r\n</ion-content>\r\n";
     /***/
   },
 
@@ -245,7 +245,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "login",
         value: function login() {
-          this.router.navigateByUrl('/login-page');
+          this.router.navigateByUrl("/login-page");
+        }
+      }, {
+        key: "signup",
+        value: function signup() {
+          this.router.navigateByUrl("/signup-page");
         }
       }]);
 
@@ -263,7 +268,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-home',
+      selector: "app-home",
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./home.page.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.page.html")).default,

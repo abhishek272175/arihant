@@ -863,6 +863,10 @@ const routes = [
     {
         path: 'profile',
         loadChildren: () => __webpack_require__.e(/*! import() | pages-profile-profile-module */ "pages-profile-profile-module").then(__webpack_require__.bind(null, /*! ./pages/profile/profile.module */ "./src/app/pages/profile/profile.module.ts")).then(m => m.ProfilePageModule)
+    },
+    {
+        path: 'signup-page',
+        loadChildren: () => __webpack_require__.e(/*! import() | pages-signup-page-signup-page-module */ "pages-signup-page-signup-page-module").then(__webpack_require__.bind(null, /*! ./pages/signup-page/signup-page.module */ "./src/app/pages/signup-page/signup-page.module.ts")).then(m => m.SignupPagePageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {

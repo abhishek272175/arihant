@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-content class=\"bg-content\">\r\n  <div class=\"logo-area\">\r\n    <img src=\"assets/img/images/logo-arihant.png\" class=\"logo-margin\" />\r\n    <h1>Smart Solution</h1>\r\n  </div>\r\n  <div class=\"btn-box\">\r\n    <ion-button (click)=\"login()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Log In</ion-button>\r\n    <ion-button (click)=\"login()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Sign Up</ion-button>\r\n    <!--<ion-button (click)=\"onSignup()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Try it Now</ion-button>-->\r\n  </div>\r\n</ion-content>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-content class=\"bg-content\">\r\n  <div class=\"logo-area\">\r\n    <img src=\"assets/img/images/logo-arihant.png\" class=\"logo-margin\" />\r\n    <h1>Smart Solution</h1>\r\n  </div>\r\n  <div class=\"btn-box\">\r\n    <ion-button\r\n      (click)=\"login()\"\r\n      color=\"light2\"\r\n      class=\"front-btn\"\r\n      expand=\"block\"\r\n      >Log In</ion-button\r\n    >\r\n    <ion-button\r\n      (click)=\"signup()\"\r\n      color=\"light2\"\r\n      class=\"front-btn\"\r\n      expand=\"block\"\r\n      >Sign Up</ion-button\r\n    >\r\n    <!--<ion-button (click)=\"onSignup()\" color=\"light2\" class=\"front-btn\" expand=\"block\">Try it Now</ion-button>-->\r\n  </div>\r\n</ion-content>\r\n");
 
 /***/ }),
 
@@ -131,10 +131,12 @@ let HomePage = class HomePage {
         this.authService = authService;
         this.router = router;
     }
-    ngOnInit() {
-    }
+    ngOnInit() { }
     login() {
-        this.router.navigateByUrl('/login-page');
+        this.router.navigateByUrl("/login-page");
+    }
+    signup() {
+        this.router.navigateByUrl("/signup-page");
     }
 };
 HomePage.ctorParameters = () => [
@@ -144,7 +146,7 @@ HomePage.ctorParameters = () => [
 ];
 HomePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-home',
+        selector: "app-home",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./home.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/home/home.page.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./home.page.scss */ "./src/app/pages/home/home.page.scss")).default]
     }),

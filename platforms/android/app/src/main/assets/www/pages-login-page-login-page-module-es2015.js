@@ -131,13 +131,12 @@ let LoginPagePage = class LoginPagePage {
         this.authService = authService;
         this.router = router;
     }
-    ngOnInit() {
-    }
+    ngOnInit() { }
     addDevice() {
-        this.router.navigateByUrl('/google-otp');
+        this.router.navigateByUrl("/google-otp");
     }
     reset() {
-        this.router.navigateByUrl('/reset-passward');
+        this.router.navigateByUrl("/reset-passward");
     }
 };
 LoginPagePage.ctorParameters = () => [
@@ -147,7 +146,7 @@ LoginPagePage.ctorParameters = () => [
 ];
 LoginPagePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-login-page',
+        selector: "app-login-page",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./login-page.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/login-page/login-page.page.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./login-page.page.scss */ "./src/app/pages/login-page/login-page.page.scss")).default]
     }),
