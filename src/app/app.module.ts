@@ -11,6 +11,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+
+
 import { FormsModule } from '@angular/forms';
 
 import { File } from '@ionic-native/file/ngx';
@@ -22,6 +30,10 @@ import {IonicColorPickerModule} from 'ionic-color-picker';
     IonicColorPickerModule,
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
     HttpClientModule,
     FormsModule,
     IonicModule.forRoot(),
